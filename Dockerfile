@@ -16,6 +16,7 @@ RUN yum install -y unzip \
 WORKDIR /data
 
 ENV GTFSVTOR_OPTS=-Xmx4G
+ENV LANG C.utf8
 
 ENTRYPOINT ["/app/gtfsvtor/bin/gtfsvtor"]
 CMD ["-h"]
