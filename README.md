@@ -77,7 +77,7 @@ Run a dockerized GTFSVTOR from sources:
 
 ```sh
 docker build -t gtfsvtor:latest .
-docker run -rm -v <path_data_directory, e.g. $(PWD)>:/data -e TZ=Europe/Berlin gtfsvtor:latest <gtfs-file>
+docker run --rm -v <path_data_directory, e.g. $(PWD)>:/data -e TZ=Europe/Berlin gtfsvtor:latest <gtfs-file>
 ```
 
 GTFSVTOR is executed in the mounted data-dir. If you'd like to use a custom config.properties, 
